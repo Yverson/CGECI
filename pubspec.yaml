@@ -71,7 +71,7 @@ dependencies:
   syncfusion_flutter_charts: ^19.1.67
 
   # VIDEOS
-  video_player: ^2.1.4
+  #video_player: ^2.1.4
 
   # NOTIFICATION
   flutter_local_notifications: ^5.0.0+4
