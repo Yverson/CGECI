@@ -29,7 +29,7 @@ class ShAddressManagerScreenState extends State<ShAddressManagerScreen> {
   @override
   void initState() {
     super.initState();
-    fetchData();
+    //fetchData();
   }
 
   fetchData() async {
