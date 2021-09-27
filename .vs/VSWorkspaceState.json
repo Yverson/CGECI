@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\android",
+    "\\android\\app",
+    "\\android\\app\\release",
+    "\\android\\app\\src",
+    "\\android\\app\\src\\debug",
+    "\\android\\app\\src\\profile"
+  ],
+  "SelectedNode": "\\android\\app\\src\\profile\\AndroidManifest.xml",
+  "PreviewInSolutionExplorer": false
+}
