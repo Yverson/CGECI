@@ -37,20 +37,6 @@
 	<string>ca-app-pub-1399327544318575~8667636001</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>NSCameraUsageDescription</key>
-	<string>Prokit app requires access to the Camera to upload your photo.</string>
-	<key>NSFaceIDUsageDescription</key>
-	<string>Please authorize to use the app</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>ProKit app want to access your location</string>
-	<key>NSLocationUsageDescription</key>
-	<string>Prokit wants to enable location</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Prokit wants to enable location</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Prokit app requires access to the photo library to upload your photo.</string>
-	<key>NSUserTrackingUsageDescription</key>
-	<string>This identifier will be used to deliver personalized ads to you.</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
