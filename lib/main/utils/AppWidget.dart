@@ -11,7 +11,6 @@ import 'package:cgeci/main/model/ListModels.dart';
 
 import 'AppColors.dart';
 import 'AppConstant.dart';
-import 'clusteringGoogleMaps/lat_lang_geohash.dart';
 
 Widget text(
   String? text, {

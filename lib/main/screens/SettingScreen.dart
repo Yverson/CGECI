@@ -6,7 +6,6 @@ import 'package:package_info/package_info.dart';
 import 'package:cgeci/main/utils/AppColors.dart';
 import 'package:cgeci/main/utils/AppConstant.dart';
 import 'package:cgeci/main/utils/AppWidget.dart';
-import 'package:share/share.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../main.dart';
@@ -107,16 +106,6 @@ class SettingScreenState extends State<SettingScreen> {
                       launch(ChangeLogsUrl, forceWebView: true, enableJavaScript: true);
                     },
                     leading: Image.asset('images/app/ic_change_log.png', height: 24, width: 24, color: appColorPrimary),
-                  ),
-                  SettingItemWidget(
-                    title: "Share App",
-                    onTap: () async {
-                      PackageInfo.fromPlatform().then((value) async {
-                        String package = value.packageName;
-                        await Share.share('Download $mainAppName from Play Store\n\n\n$PlayStoreUrl$package');
-                      });
-                    },
-                    leading: Image.asset('images/app/ic_share.png', height: 24, width: 24, color: appColorPrimary),
                   ),
                   SettingItemWidget(
                     title: "Rate us",
