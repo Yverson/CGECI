@@ -90,7 +90,7 @@ class ShCartScreenState extends State<ShCartScreen> {
   }
 
   openwhatsapp() async{
-    var whatsapp ="+2250777362408";
+    var whatsapp ="+2250700079444";
     var whatsappURl_android = "whatsapp://send?phone="+whatsapp+"&text=";
     var whatappURL_ios ="https://wa.me/$whatsapp?text=${Uri.parse("")}";
     if(Platform.isIOS){

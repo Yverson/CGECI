@@ -137,7 +137,7 @@ L’édition 2021 de la CGECI ACADEMY aura lieu les 28 et 29 octobre 2021, au So
 
 
   openwhatsapp() async{
-    var whatsapp ="+2250777362408";
+    var whatsapp ="+2250700079444";
     var whatsappURl_android = "whatsapp://send?phone="+whatsapp+"&text=";
     var whatappURL_ios ="https://wa.me/$whatsapp?text=${Uri.parse("")}";
     if(Platform.isIOS){

@@ -10,6 +10,7 @@ import 'package:cgeci/main/utils/AppWidget.dart';
 import 'package:cgeci/fullApps/shopHop/utils/ShColors.dart';
 import 'package:cgeci/fullApps/shopHop/utils/ShConstant.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:webview_flutter/webview_flutter.dart';
 
 import '../../../main.dart';
 
@@ -45,71 +46,15 @@ class ShSignUpState extends State<ShSignUp> {
           ),
         ],
       ),
-      body: Center(
-        child: Container(
-          alignment: Alignment.topCenter,
-          child: Observer(
-            builder: (_) => SingleChildScrollView(
-              child: Column(
-                mainAxisSize: MainAxisSize.max,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  SizedBox(height: 30),
-                  Image.asset("images/cgeci/logocgeci21.png", width: context.width() * 0.80),
-                  SizedBox(height: 16),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      formHeading("INSCRIPTION/"),
-                      formSubHeadingForm("PASS PARTICIPANT"),
-                    ],
-                  ),
-                  formSubHeading1Form("INSCRIPTION OBLIGATOIRE A PARTIR DU 15 SEPTEMBRE 2021"),
-                  SizedBox(height: 40),
-                  // editTextStyle("Nom", isPassword: false),
-                  // SizedBox(height: 16),
-                  // editTextStyle("Prénom", isPassword: false),
-                  // SizedBox(height: 16),
-                  // editTextStyle("Fonction", isPassword: true),
-                  // SizedBox(height: 16),
-                  // editTextStyle("Entreprise", isPassword: true),
-                  // SizedBox(height: 16),
-                  // editTextStyle("Cote d'Ivoire", isPassword: false),
-                  // SizedBox(height: 16),
-                  // editTextStyle("Email", isPassword: false),
-                  // SizedBox(height: 16),
-                  // editTextStyle("Telephone", isPassword: true),
-                  // SizedBox(height: 20),
-                  // Padding(padding: const EdgeInsets.fromLTRB(40, 0, 40, 0),
-                  //     child: MaterialButton(
-                  //   height: width * 0.125,
-                  //   minWidth: double.infinity,
-                  //   child: text("Inscription", fontSize: textSizeLargeMedium, textColor: sh_white, fontFamily: fontMedium),
-                  //   textColor: sh_white,
-                  //   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40.0)),
-                  //   color: Color.fromRGBO(50, 157, 156,1),
-                  //   onPressed: () => {
-                  //   showDialog(
-                  //   context: context,
-                  //   builder: (BuildContext context) => CustomDialogExample(),
-                  //   )
-                  //
-                  //   //ShHomeScreen().launch(context);
-                  //   },
-                  // )
-                  // ),
-                  SizedBox(height: 30),
-                ],
-              ),
-            ),
-          ),
-        ),
+      body: WebView(
+        javascriptMode: JavascriptMode.unrestricted,
+        initialUrl: 'https://cgeciacademy2021.opentic.ci/',
       ),
     );
   }
 
   openwhatsapp() async{
-    var whatsapp ="+2250777362408";
+    var whatsapp ="+2250700079444";
     var whatsappURl_android = "whatsapp://send?phone="+whatsapp+"&text=";
     var whatappURL_ios ="https://wa.me/$whatsapp?text=${Uri.parse("")}";
     if(Platform.isIOS){

@@ -77,14 +77,14 @@ class ShHomeFragmentState extends State<ShHomeFragment> {
     var list1 = PCDashboardModel("", "images/cgeci/img1.png");
     list.add(list1);
 
-    var list2 = PCDashboardModel("", "images/cgeci/img2.png");
-    list.add(list2);
-
-    var list3 = PCDashboardModel("", "images/cgeci/img3.png");
-    list.add(list3);
-
-    var list4 = PCDashboardModel("", "images/cgeci/img4.png");
-    list.add(list4);
+    // var list2 = PCDashboardModel("", "images/cgeci/img2.png");
+    // list.add(list2);
+    //
+    // var list3 = PCDashboardModel("", "images/cgeci/img3.png");
+    // list.add(list3);
+    //
+    // var list4 = PCDashboardModel("", "images/cgeci/img4.png");
+    // list.add(list4);
 
     mList= list;
 
@@ -140,17 +140,17 @@ class ShHomeFragmentState extends State<ShHomeFragment> {
                         ],
                       ),
                     ),
-                    DotsIndicator(
-                      dotsCount: 4,
-                      position: selectedIndex,
-                      decorator: DotsDecorator(
-                        color: sh_white,
-                        activeColor: sh_colorAccent,
-                        size: Size.square(9.0),
-                        activeSize: Size(18.0, 9.0),
-                        activeShape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
-                      ),
-                    )
+                    // DotsIndicator(
+                    //   dotsCount: 4,
+                    //   position: selectedIndex,
+                    //   decorator: DotsDecorator(
+                    //     color: sh_white,
+                    //     activeColor: sh_colorAccent,
+                    //     size: Size.square(9.0),
+                    //     activeSize: Size(18.0, 9.0),
+                    //     activeShape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
+                    //   ),
+                    // )
                   ],
                 ),
               ),
