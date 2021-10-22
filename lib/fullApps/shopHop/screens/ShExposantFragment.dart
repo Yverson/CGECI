@@ -42,7 +42,7 @@ class ShExposantFragmentState extends State<ShExposantFragment> {
 
   Future<List<ProductModel>> fetchData() async {
     final response = await http.get(
-        Uri.parse('http://cgeciapi.gaddielsoftware.com/api/Exposants'));
+        Uri.parse('http://cgeciapi.gaddielsoftware.com/api/Exposantsv1'));
     if (response.statusCode == 200) {
       var responseData = json.decode(response.body);
       //Creating a list to store input data;
@@ -145,7 +145,7 @@ class StoreDeal extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-            Image.asset('${model.img}',
+            Image.network('${model.img}',
                 height: width * 0.2708333333333333,
                 width: width * 0.2708333333333333,
                 fit: BoxFit.fill),

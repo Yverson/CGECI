@@ -241,14 +241,14 @@ class ShProfileFragmentState extends State<ShProfileFragment> {
                                 )),
                             1: Container(
                                 padding: EdgeInsets.all(10),
-                                child: Text('YCEO',
+                                child: Text('PME',
                                     style: primaryTextStyle(
                                         color: _sliding == 1
                                             ? sh_greenCgeci
                                             : sh_light_green))),
                             2: Container(
                                 padding: EdgeInsets.all(10),
-                                child: Text('PME',
+                                child: Text('YCEO',
                                     style: primaryTextStyle(
                                         color: _sliding == 2
                                             ? sh_greenCgeci
@@ -262,8 +262,8 @@ class ShProfileFragmentState extends State<ShProfileFragment> {
                           }),
                     ),
                     if (_sliding == 0) mPageCEO("CEO"),
-                    if (_sliding == 1) mPageYCEO("YCEO"),
-                    if (_sliding == 2) mPagePME("PME"),
+                    if (_sliding == 1) mPageYCEO("PME"),
+                    if (_sliding == 2) mPagePME("YCEO"),
                   ],
                 );
               } else {
@@ -276,7 +276,9 @@ class ShProfileFragmentState extends State<ShProfileFragment> {
             }),
       ),
     ));
+
   }
+
 }
 
 class T1Model {

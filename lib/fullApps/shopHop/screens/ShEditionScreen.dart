@@ -85,7 +85,7 @@ L’édition 2021 de la CGECI ACADEMY aura lieu les 28 et 29 octobre 2021, au So
                 children: <Widget>[
                   Material(
                       elevation: 0.0,
-                      child: Image.asset("images/cgeci/edition.png",
+                      child: Image.asset("images/cgeci/imageaccueil.png",
                           fit: BoxFit.cover)),
                   SizedBox(height: 10),
                   Container(
